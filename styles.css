@@ -1,0 +1,205 @@
+/* Genel Stil */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .modal-dialog {
+        max-width: 95%;
+    }
+
+    .shift-cell {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .shift-label {
+        font-size: 0.7rem;
+    }
+}
+
+/* Tablolar için Stil */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Vardiya Takvimi için Özel Stiller */
+#shift-calendar {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#shift-calendar th, #shift-calendar td {
+    border: 1px solid #dee2e6;
+    position: relative;
+}
+
+#shift-calendar th {
+    background-color: #343a40;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+#shift-calendar td {
+    height: 100px;
+    padding: 5px;
+}
+
+.shift-cell {
+    background-color: #17a2b8;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 4px 6px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.shift-cell:hover {
+    background-color: #138496;
+    transform: scale(1.02);
+}
+
+/* Avatarlar */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.employee-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.employee-name {
+    font-weight: 600;
+    color: #555;
+}
+
+.department-name {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Modal Stilleri */
+.modal-header {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Tooltip */
+.tooltip-inner {
+    max-width: 200px;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #343a40;
+    border-radius: 4px;
+}
+
+.tooltip.bs-tooltip-top .arrow::before,
+.tooltip.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+    border-top-color: #343a40;
+}
+
+.tooltip.bs-tooltip-bottom .arrow::before,
+.tooltip.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+    border-bottom-color: #343a40;
+}
+
+.tooltip.bs-tooltip-left .arrow::before,
+.tooltip.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+    border-left-color: #343a40;
+}
+
+.tooltip.bs-tooltip-right .arrow::before,
+.tooltip.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+    border-right-color: #343a40;
+}
